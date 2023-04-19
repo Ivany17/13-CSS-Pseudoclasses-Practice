@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(13) CSS. Псевдоклассы. Practice</title>
+    <link rel="shortcut icon" href="./assets/images/nature-logo.png" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="./assets/css/reset.css"> -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <!-- Псевдокласс в CSS - это ключевое влово, добавленное к селектору, которое определяет его особое состояние -->
+    <a href="#target">target</a>
+    <nav class="navigation">
+        <ul class="link-list">
+            <!-- li*5>a.page-link{item $} -->
+            <li><a href="https://rozetka.com.ua/" class="page-link" target="_blank">Rozetka</a></li>
+            <li><a href="https://uk.wikipedia.org/" class="page-link" target="_blank">Wikipedia</a></li>
+            <li><a href="https://github.com/" class="page-link" target="_blank">Git Hub</a></li>
+            <li><a href="https://hdrezka.co/" class="page-link" target="_blank">HDrezka</a></li>
+            <li><a href="https://www.olx.ua/uk/" class="page-link" target="_blank">OLX.ua</a></li>
+        </ul>
+    </nav>
+    <button class="page-link">Click me</button>
+    <div tabindex="5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut nulla reiciendis consectetur dolores porro natus facere quisquam accusamus, eum fugit quasi harum dolor culpa sunt accusantium veniam nesciunt obcaecati blanditiis placeat ab praesentium voluptatibus quia! Necessitatibus excepturi in esse nam?</div>
+
+    <!-- ul>li*5>lorem20 -->
+    <ul id="target">
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error aperiam doloremque expedita accusamus quidem corrupti numquam explicabo excepturi, minus enim.</li>
+        <li>Ab, adipisci alias. Voluptatum, nam ab nesciunt esse sunt perferendis aut, iure dolores doloribus pariatur harum non, omnis quod libero!</li>
+        <li>Obcaecati quaerat voluptate esse ipsam sed, ut assumenda rerum veritatis sequi quia eaque! Corporis nemo quo, officiis dolor fuga fugiat?</li>
+        <li>Suscipit hic molestiae blanditiis error nemo assumenda, dolorem quisquam cumque! Facere enim perferendis corporis saepe veniam sapiente nisi facilis ad.</li>
+        <li>Pariatur, repudiandae illum voluptates eius incidunt minima labore veritatis modi dicta temporibus ut iste eos et sunt beatae excepturi corporis.</li>
+    </ul>
+
+    <div>
+        <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nam blanditiis consectetur rerum laudantium ipsum, sequi exercitationem. Voluptatem, ipsam dolore.</li>
+            <li>Nesciunt ducimus et obcaecati odit architecto laboriosam quo est aliquid! Illum molestias quidem ut magnam officiis quibusdam nisi iusto possimus.</li>
+            <li>Amet minus quasi molestias maiores tempora, eius veniam, laborum quia dolores animi voluptate. Quo, ut ea doloremque neque odit consequuntur?</li>
+            <li>Est quas blanditiis at deleniti dolor culpa aperiam optio maiores, magnam a veniam. Cum totam, laboriosam perspiciatis corporis eum maiores?</li>
+            <li>Temporibus voluptatum veritatis ea asperiores dicta, autem quam illum consequuntur totam voluptas ratione. Exercitationem rerum dignissimos esse fuga? Excepturi, odio.</li>
+        </ul>
+    </div>
+    <button disabled>Disabled button</button>
+
+    <!-- PRACTICE TABLE 07.09.21 -->
+    <table>
+        <thead>
+            <tr>
+                <th><p>Choose your plan</p></th>
+                <th>
+                    <p>starter</p>
+                    <p>$10</p> 
+                    <p>per month</p>
+                </th>
+                <th>
+                    <p>econom</p>
+                    <p>$30</p>
+                    <p>per month</p>
+                </th>
+                <th>
+                    <p>standard</p>
+                    <p>$59</p>
+                    <p>per month</p>
+                </th>
+                <th>
+                    <p>professional</p>
+                    <p>$99</p>
+                    <p>per month</p>
+                </th>
+              </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Amount of space</td>
+                <td>20GB</td>
+                <td>40GB</td>
+                <td>110GB</td>
+                <td>Unlimited</td>
+              </tr>
+              <tr>
+                  <td>Bandwith per month</td>
+                  <td>120GB</td>
+                  <td>240GB</td>
+                  <td>610GB</td>
+                  <td>1300GB</td>
+              </tr>
+                  <td>Email accounts</td>
+                  <td>1</td>
+                  <td>15</td>
+                  <td>60</td>
+                  <td>Unlimited</td>
+              </tr>
+              <tr>
+                  <td>MySQL databases</td>
+                  <td>1</td>
+                  <td>15</td>
+                  <td>60</td>
+                  <td>Unlimited</td>
+              </tr>
+              <tr>
+                  <td>25h support</td>
+                  <td>No</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+              </tr>
+              <tr>
+                  <td>Support tickets per month</td>
+                  <td>2</td>
+                  <td>6</td>
+                  <td>14</td>
+                  <td>20</td>
+              </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th></th>
+                <th><button>START</button></th>
+                <th><button>START</button></th>
+                <th><button>START</button></th>
+                <th><button>START</button></th>
+            </tr>
+        </tfoot>
+    </table>      
+</body>
+</html>
